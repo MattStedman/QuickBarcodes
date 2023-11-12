@@ -58,6 +58,7 @@ namespace QuickBarcodes
             data = Clipboard.GetText();
             generateList();
             updateTextBox();
+            lstBarcodes.Focus();
         }
 
         private void generateList()
