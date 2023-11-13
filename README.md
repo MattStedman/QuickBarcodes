@@ -15,4 +15,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Font
 
-This project uses the [Libre3o9](https://github.com/graphicore/librebarcode) font, licensed under the [SIL Open Font License 1.1](OFL.txt).
+This project uses the [Libre3of9](https://github.com/graphicore/librebarcode) font, licensed under the [SIL Open Font License 1.1](OFL.txt).
