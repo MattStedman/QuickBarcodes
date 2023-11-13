@@ -33,12 +33,13 @@ namespace QuickBarcodes
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnGenerate_Click(object sender, EventArgs e)
         {
             data = txtBarcodes.Text;
             generateList();
             updateTextBox();
             lstBarcodes.DataSource = barcodes;
+            lstBarcodes.Focus();
 
         }
 

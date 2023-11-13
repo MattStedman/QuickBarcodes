@@ -28,105 +28,106 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblBarcode = new System.Windows.Forms.Label();
-            this.lblText = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnPaste = new System.Windows.Forms.Button();
-            this.lstBarcodes = new System.Windows.Forms.ListBox();
-            this.txtBarcodes = new System.Windows.Forms.TextBox();
-            this.SuspendLayout();
+            lblBarcode = new Label();
+            lblText = new Label();
+            btnGenerate = new Button();
+            btnPaste = new Button();
+            lstBarcodes = new ListBox();
+            txtBarcodes = new TextBox();
+            SuspendLayout();
             // 
             // lblBarcode
             // 
-            this.lblBarcode.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblBarcode.Location = new System.Drawing.Point(14, 16);
-            this.lblBarcode.MaximumSize = new System.Drawing.Size(669, 85);
-            this.lblBarcode.MinimumSize = new System.Drawing.Size(669, 85);
-            this.lblBarcode.Name = "lblBarcode";
-            this.lblBarcode.Size = new System.Drawing.Size(669, 85);
-            this.lblBarcode.TabIndex = 2;
-            this.lblBarcode.Text = "*0123456789012345*";
-            this.lblBarcode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblBarcode.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            lblBarcode.Location = new Point(18, 20);
+            lblBarcode.Margin = new Padding(4, 0, 4, 0);
+            lblBarcode.MaximumSize = new Size(836, 106);
+            lblBarcode.MinimumSize = new Size(836, 106);
+            lblBarcode.Name = "lblBarcode";
+            lblBarcode.Size = new Size(836, 106);
+            lblBarcode.TabIndex = 2;
+            lblBarcode.Text = "*0123456789012345*";
+            lblBarcode.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblText
             // 
-            this.lblText.Font = new System.Drawing.Font("Cascadia Code", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblText.Location = new System.Drawing.Point(215, 101);
-            this.lblText.Name = "lblText";
-            this.lblText.Size = new System.Drawing.Size(272, 43);
-            this.lblText.TabIndex = 3;
-            this.lblText.Text = "0123456789012345";
-            this.lblText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblText.Font = new Font("Cascadia Code", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblText.Location = new Point(269, 126);
+            lblText.Margin = new Padding(4, 0, 4, 0);
+            lblText.Name = "lblText";
+            lblText.Size = new Size(340, 54);
+            lblText.TabIndex = 3;
+            lblText.Text = "0123456789012345";
+            lblText.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // btnGenerate
             // 
-            this.button1.Location = new System.Drawing.Point(506, 104);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(152, 40);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Create Barcodes";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            btnGenerate.Location = new Point(632, 130);
+            btnGenerate.Margin = new Padding(4, 5, 4, 5);
+            btnGenerate.Name = "btnGenerate";
+            btnGenerate.Size = new Size(190, 50);
+            btnGenerate.TabIndex = 4;
+            btnGenerate.Text = "Create Barcodes";
+            btnGenerate.UseVisualStyleBackColor = true;
+            btnGenerate.Click += btnGenerate_Click;
             // 
             // btnPaste
             // 
-            this.btnPaste.Location = new System.Drawing.Point(14, 105);
-            this.btnPaste.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnPaste.Name = "btnPaste";
-            this.btnPaste.Size = new System.Drawing.Size(152, 39);
-            this.btnPaste.TabIndex = 5;
-            this.btnPaste.Text = "From Clipboard";
-            this.btnPaste.UseVisualStyleBackColor = true;
-            this.btnPaste.Click += new System.EventHandler(this.btnPaste_Click);
+            btnPaste.Location = new Point(18, 131);
+            btnPaste.Margin = new Padding(4, 5, 4, 5);
+            btnPaste.Name = "btnPaste";
+            btnPaste.Size = new Size(190, 49);
+            btnPaste.TabIndex = 5;
+            btnPaste.Text = "From Clipboard";
+            btnPaste.UseVisualStyleBackColor = true;
+            btnPaste.Click += btnPaste_Click;
             // 
             // lstBarcodes
             // 
-            this.lstBarcodes.Font = new System.Drawing.Font("Cascadia Mono", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lstBarcodes.FormattingEnabled = true;
-            this.lstBarcodes.ItemHeight = 25;
-            this.lstBarcodes.Location = new System.Drawing.Point(689, 16);
-            this.lstBarcodes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.lstBarcodes.Name = "lstBarcodes";
-            this.lstBarcodes.Size = new System.Drawing.Size(181, 429);
-            this.lstBarcodes.TabIndex = 6;
-            this.lstBarcodes.SelectedIndexChanged += new System.EventHandler(this.lstBarcodes_SelectedIndexChanged);
+            lstBarcodes.Font = new Font("Cascadia Mono", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lstBarcodes.FormattingEnabled = true;
+            lstBarcodes.ItemHeight = 30;
+            lstBarcodes.Location = new Point(861, 20);
+            lstBarcodes.Margin = new Padding(4, 5, 4, 5);
+            lstBarcodes.Name = "lstBarcodes";
+            lstBarcodes.Size = new Size(225, 514);
+            lstBarcodes.TabIndex = 6;
+            lstBarcodes.SelectedIndexChanged += lstBarcodes_SelectedIndexChanged;
             // 
             // txtBarcodes
             // 
-            this.txtBarcodes.Location = new System.Drawing.Point(25, 168);
-            this.txtBarcodes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtBarcodes.Multiline = true;
-            this.txtBarcodes.Name = "txtBarcodes";
-            this.txtBarcodes.Size = new System.Drawing.Size(637, 279);
-            this.txtBarcodes.TabIndex = 7;
+            txtBarcodes.Location = new Point(31, 210);
+            txtBarcodes.Margin = new Padding(4, 5, 4, 5);
+            txtBarcodes.Multiline = true;
+            txtBarcodes.Name = "txtBarcodes";
+            txtBarcodes.Size = new Size(795, 348);
+            txtBarcodes.TabIndex = 7;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(896, 481);
-            this.Controls.Add(this.txtBarcodes);
-            this.Controls.Add(this.lstBarcodes);
-            this.Controls.Add(this.btnPaste);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.lblText);
-            this.Controls.Add(this.lblBarcode);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.MaximizeBox = false;
-            this.Name = "Form1";
-            this.Text = "Barcode Generator";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1120, 601);
+            Controls.Add(txtBarcodes);
+            Controls.Add(lstBarcodes);
+            Controls.Add(btnPaste);
+            Controls.Add(btnGenerate);
+            Controls.Add(lblText);
+            Controls.Add(lblBarcode);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            KeyPreview = true;
+            Margin = new Padding(4, 5, 4, 5);
+            MaximizeBox = false;
+            Name = "Form1";
+            Text = "Barcode Generator";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
         private Label lblBarcode;
         private Label lblText;
-        private Button button1;
+        private Button btnGenerate;
         private Button btnPaste;
         private ListBox lstBarcodes;
         private TextBox txtBarcodes;

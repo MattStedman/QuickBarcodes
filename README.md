@@ -6,7 +6,7 @@ The text is filtered to remove characters not in the base set of 43 from the 3of
 
 `0123456789 ABCDEFGHIJKLMNOPQRSTUVWXYZ-.$/+%`
 
-
+There is no need to include the start and stop '*' character.
 
 ## License
 

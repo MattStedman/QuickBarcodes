@@ -8,6 +8,26 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationIcon>Barcode Icon.ico</ApplicationIcon>
     <NoWin32Manifest>true</NoWin32Manifest>
+    <Copyright>MIT License - Copyright (c) 2023 Matthew Stedman</Copyright>
+    <Description>Quick Barcodes
+This program creates a barcode from each line entered in textfield, using the list to navigate through the barcodes.
+
+The text is filtered to remove characters not in the base set of 43 from the 3of9 barcode specification. These characters are as below:
+
+0123456789 ABCDEFGHIJKLMNOPQRSTUVWXYZ-.$/+%
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Font
+This project uses the Libre3of9 font, licensed under the SIL Open Font License 1.1.</Description>
+    <PackageProjectUrl>https://github.com/MattStedman/QuickBarcodes</PackageProjectUrl>
+    <PackageIcon>Barcode Icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/MattStedman/QuickBarcodes</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReleaseNotes>Well it works.</PackageReleaseNotes>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,7 +35,27 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="..\..\..\..\..\OneDrive - O'Neil Software\Pictures\Screenshots\Barcode Icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="LibreBarcode39-Regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="OFL.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
